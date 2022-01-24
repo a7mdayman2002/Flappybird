@@ -14,6 +14,10 @@ while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
+        elif event.type == pygame.KEYUP:
+            key = event.key
+            if key == pygame.K_ESCAPE:
+                run = False
 
 
 
