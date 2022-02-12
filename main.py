@@ -5,7 +5,7 @@ from grid import *
 pygame.init()
 
 clock = pygame.time.Clock()
-fps = 30
+fps = 60
 run = True
 x_pos = 0
 
@@ -33,6 +33,7 @@ while run:
     screen.blit(base, (x_pos, 700))
     screen.blit(base, (x_pos + 500, 700))
     screen.blit(bird_mid,bird_rect)
+
 
     if x_pos <= -500:
         x_pos = 0
